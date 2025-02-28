@@ -1,0 +1,7 @@
+{
+  "name": "PRUEBA_ZAFIRUS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
