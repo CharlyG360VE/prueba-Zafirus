@@ -1,0 +1,36 @@
+<ion-content class="ion-padding" [scrollX]="false">
+  <ion-grid [fixed]="true" class="mt-5">
+    @if (heroe) {
+      <ion-card>
+        <img alt="hero detail picture" class="rounded" [src]="heroe.thumbnail.path + '.' + heroe.thumbnail.extension" />
+
+        <ion-card-header>
+          <ion-card-title class="ion-text-center" color="primary">{{ heroe.name }}</ion-card-title>
+          <ion-card-subtitle>{{ heroe.description }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="12" class="mt-4">
+              <ion-text>
+                <span class="font-weight-bold">Cantidad de comics disponibles:</span> {{ heroe.comics.available }}
+              </ion-text>
+            </ion-col>
+    
+            <ion-col size="12">
+              <ion-text>
+                <span class="font-weight-bold">Cantidad de series disponibles:</span> {{ heroe.series.available }}
+              </ion-text>
+            </ion-col>
+    
+            <ion-col size="12">
+              <ion-text>
+                <span class="font-weight-bold">Cantidad de stories disponibles:</span> {{ heroe.stories.available }}
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    }
+  </ion-grid>
+</ion-content>

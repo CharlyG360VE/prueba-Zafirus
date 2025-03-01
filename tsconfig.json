@@ -19,7 +19,30 @@
     "target": "es2022",
     "module": "es2020",
     "lib": ["es2018", "dom"],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "paths": {
+      "@config/*": [
+        "./src/app/config/*"
+      ],
+      "@models/*": [
+        "./src/app/domain/models/*"
+      ],
+      "@use-cases/*": [
+        "./src/app/domain/use-cases/*"
+      ],
+      "@driven-adapter/*": [
+        "./src/app/infrastructure/driven-adapter/*"
+      ],
+      "@helpers/*": [
+        "./src/app/infrastructure/helpers/*"
+      ],
+      "@components/*": [
+        "./src/app/presentation/components/*"
+      ],
+      "@views/*": [
+        "./src/app/presentation/views/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
